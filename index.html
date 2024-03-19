@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&family=Inspiration&family=Playpen+Sans:wght@100&family=Shantell+Sans:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="outerdiv">
+        <div class="main-div">
+            <p id="heading">Easy Image Editor</p>
+            <div class="container">
+                <div class="edit-sec disable">
+                    <div>
+                        <p>Filters</p>
+                        <div class="options">
+                            <button id="brightness" class="active">Brightness</button>
+                            <button id="saturation" >Saturation</button>
+                            <button id="inversion" >Inversion</button>
+                            <button id="grayscale" >Grayscale</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rgn">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input id="slider" type="range" value="100" min="0" max="200">
+                    </div>
+                    <div>
+                        <p>Rotate and Flip</p>
+                        <div class="rf-btn">
+                            <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                            <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                            <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                            <button id="vertical"><i class='bx bx-reflect-horizontal' ></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-sec">
+                    <img src="images/c3sn0s6qqp1w4ze20wgx.webp" alt="preview-image">
+                </div>
+            </div>
+            <div class="lower-btn">
+                <div>
+                    <button class="reset-btn disable">RESET FILTERS</button>
+                </div>
+                <div>
+                    <input type="file" accept="image/*" class="file-input" hidden>
+                    <button id="choose-btn">CHOOSE IMAGE</button>
+                    <button id="save-btn" class="disable">SAVE IMAGE</button>
+                </div>
+            </div>
+        </div>    
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>

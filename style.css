@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Eczar', serif;
+    /* font-family: 'Inspiration', cursive; */
+    /* font-family: 'Playpen Sans'; */
+    /* font-family: 'Shantell Sans', cursive; */
+    background-color: white;
+    font-size: medium;
+}
+button{
+    padding: 4px;
+    border: 2px solid;
+}
+button:hover{
+    cursor: pointer;
+}
+#heading{
+    font-size:xx-large;
+    text-align: center;
+}
+.outerdiv{
+    height: 100vh;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 246, 255);
+
+}
+.main-div{
+    width: 70%;
+    /* border: 2px solid black; */
+    padding: 12px;    
+    margin: auto;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 12px;
+    /* height: 100%; */
+    /* justify-content: center; */
+    /* display: flex; */
+    /* text-align: center; */
+    /* align-items: center; */
+}
+.container{
+    /* width: 70%; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+
+    /* align-items: center; */
+}
+.image-sec img{
+    /* border: 4px solid black; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* height: 100%; */
+}
+.image-sec{
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: center;
+    width: 60%;
+    max-width: 490px;
+    max-height: 335px;
+    /* max-height:fit-content; */
+    /* text-align: center; */
+    /* border: 1px solid black; */
+}
+
+.edit-sec , .image-sec{
+    /* border: 1px solid black; */
+    margin: 12px;
+
+}
+.edit-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding: 20px 12px;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.options button{
+    margin: 4px;
+    width: 40%;
+}
+.rgn{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#slider{
+    width: 100%;
+}
+.rf-btn{
+    /* width: 20%; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.rf-btn button{
+    width: 20%;
+}
+
+.lower-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    margin: 5px;
+}
+.lower-btn button{
+    padding: 5px;
+    /* width: 100%; */
+}
+#choose-btn{
+    background-color: grey;
+    color: white;
+    border-color:grey ;
+}
+/* .lower-btn div{
+    border: 1px solid black;
+} */
+
+.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.active{
+    background-color: rgb(129, 122, 255);
+    color: white;
+    border-color: rgb(129, 122, 255);
+}
